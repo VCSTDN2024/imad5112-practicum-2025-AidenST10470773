@@ -3,7 +3,7 @@
 ----------------------------------------------------------
 ## Project Overview
 
-The Playlist Manager App is an Android application designed for users to track their song activity . It allows users to log details such as the song  played, artist name,comment on the song and a personal rating for each song. The app stores a maximum of the 4 most recent entries and provides a review screen where users can see a summary logged and the average raing  their sessions. The app utilizes `AppCompatActivity`, `EditText` for input, and an `object` (singleton) for managing the log data in memory.
+The Playlist Manager App is an Android application designed for users to track their song activity . It allows users to log details such as the song  played, artist name,comment on the song and a personal rating for each song. The app stores a maximum of the 4 most recent entries and provides a review screen where users can see a summary logged and the average rating  their sessions. The app utilizes `AppCompatActivity`, `EditText` for input, and an `object` (singleton) for managing the log data in memory.
 
 ------------------------------------------------------
 
@@ -25,12 +25,12 @@ The Playlist Manager App aims to provide a simple and efficient way for listener
 
 - **Log Storage (Max 4 Entries):**
     - **Description:** The app maintains a log of the 4 most recent song entries.
-    - **Functionality:** When a new entry is added and the log is full (7 entries), the oldest entry is automatically removed to make space for the new one (FIFO - First-In, First-Out). Data is managed by the `inventory_manager` Kotlin object.
+    - **Functionality:** When a new entry is added and the log is full (4 entries), the oldest entry is automatically removed to make space for the new one (FIFO - First-In, First-Out). Data is managed by the `inventory_manager` Kotlin object.
     - **User Interaction:** This process is automatic and transparent to the user after they submit a new log.
 
 - **Review Log Data:**
     - **Description:** Users can navigate to a dedicated screen to review their logged data and calculated statistics.
-    - **Functionality:** The "Review Log" screen displays:
+    - **Functionality:** The "Review playlist" screen displays:
        
         - **Average rating:** Calculates and displays the average rating per song session across all logged entries.
         - **List of All Logged Games (Optional but good):** Displays details for all current (up to 4) song logs.
@@ -97,7 +97,7 @@ During the development of the Game Log App, I encountered several challenges, in
 
 - **Challenge 3: Passing Data and Updating UI Across Activities:**
     - **Description:** Ensuring data entered in `Add_log` was correctly stored and then retrieved and displayed in `Review_log`.
-    - **Solution:** Data was added directly to the `inventory_manager` object from `Add_log`. The `Review_log` activity then read directly from this same shared object in its `onResume()` or `onCreate()` to display the current state of the logs and statistics. This avoided complex `Intent` extras for large datasets for this particular architecture.
+    - **Solution:** Data was added directly to the `inventory_manager` object from `Add_log`. The `Review playlist` activity then read directly from this same shared object in its `onResume()` or `onCreate()` to display the current state of the logs and statistics. This avoided complex `Intent` extras for large datasets for this particular architecture.
 
 ## From these challenges, I learned:
 - The importance of choosing appropriate data structures (`ArrayList`) for specific requirements (like FIFO queues).
