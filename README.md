@@ -67,11 +67,16 @@ This project was managed using **GitHub** for version control. All code changes 
 I utilized **GitHub Actions** to automate parts of the development workflow. This included:
 - , e.g., Generating APK/AAB files for testing or distribution
 
-<!-- ![Screenshot of GitHub Actions Workflow](path_to_your_screenshot.png) -->
+
 
 -------------------------------------------------------
 
 ### App Screenshots:
+![Screenshot 2025-06-19 125553](https://github.com/user-attachments/assets/770a5b67-deeb-4a77-a88d-c1214933dc19)
+![Screenshot 2025-06-19 125607](https://github.com/user-attachments/assets/698d1f24-ab7b-48e0-9a0a-2cb1019f87cc)
+![Screenshot 2025-06-19 125629](https://github.com/user-attachments/assets/11e03cdd-c82c-46b2-9c73-bec54c8b2f9c)
+![Screenshot 2025-06-19 125655](https://github.com/user-attachments/assets/771981f8-f8f9-4872-b998-dd621d966276)
+![Screenshot 2025-06-19 125708](https://github.com/user-attachments/assets/3dbe3f8a-c784-4c05-b76c-c3f62aaf2dd5)
 
 
 -----------------------------------------------
