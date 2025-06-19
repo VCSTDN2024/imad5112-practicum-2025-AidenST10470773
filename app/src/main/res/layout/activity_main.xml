@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="@drawable/background"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-
+    
     <Button
         android:id="@+id/startBtn"
         android:layout_width="210dp"
         android:layout_height="68dp"
         android:text="Start"
         android:textSize="30sp"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -35,10 +37,10 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="223dp"
-        android:layout_height="253dp"
+        android:layout_width="277dp"
+        android:layout_height="293dp"
         android:gravity="center"
-        android:text="Welcome to song manager. yhis app will crete and manage a playlist of your choosing"
+        android:text="Welcome to SONG MANAGER. This app will creAte and manage a playlist of your choosing"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/startBtn"

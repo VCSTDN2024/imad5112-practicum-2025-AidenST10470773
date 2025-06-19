@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".Input_sceen">
 
 
@@ -17,6 +18,8 @@
         android:layout_marginEnd="161dp"
         android:text="Add Song"
         android:textSize="22sp"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"
@@ -32,6 +35,8 @@
         android:layout_marginEnd="161dp"
         android:text="Review songs"
         android:textSize="22sp"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,6 +50,8 @@
         android:layout_marginTop="76dp"
         android:layout_marginEnd="110dp"
         android:text="Exit App"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
