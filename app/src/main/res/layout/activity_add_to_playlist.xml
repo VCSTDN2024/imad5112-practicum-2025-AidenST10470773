@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputArtistNameEt" />
 
     <EditText
-        android:id="@+id/inputCommetEt"
+        android:id="@+id/inputCommentEt"
         android:layout_width="216dp"
         android:layout_height="63dp"
         android:layout_marginStart="102dp"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputRatingEt" />
 
     <Button
-        android:id="@+id/AddToPly"
+        android:id="@+id/AddToPlyBtn"
         android:layout_width="193dp"
         android:layout_height="66dp"
         android:layout_marginStart="109dp"
@@ -75,5 +75,5 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputCommetEt" />
+        app:layout_constraintTop_toBottomOf="@+id/inputCommentEt" />
 </androidx.constraintlayout.widget.ConstraintLayout>
